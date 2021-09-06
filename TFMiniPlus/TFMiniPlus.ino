@@ -16,7 +16,7 @@ void setup() {
 }
 
 void loop() {
-  if (Serial3.available()) {
+  if (Serial3.available()>=9) {
     if (Serial3.read() == HEADER) {
       uart[0] = HEADER;
       if (Serial3.read() == HEADER) {
@@ -28,8 +28,7 @@ void loop() {
         if (uart[8] == (check & 0xff)) {
           dist = uart[2] + uart[3] * 256;
           strength = uart[4] + uart[5] * 256;
-          Serial.print(dist);
-          Serial.print('\n');
+          Serial.println(dist);
           delay(10);
         }
       }
