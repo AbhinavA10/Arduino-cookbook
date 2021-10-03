@@ -1,0 +1,1 @@
+Follow the color of the wires in the diagram
