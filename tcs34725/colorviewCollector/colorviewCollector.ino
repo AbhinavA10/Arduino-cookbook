@@ -58,7 +58,7 @@ void setup() {
     }
     //Serial.println(gammatable[i]);
   }
-delay(5000);
+delay(2000);
 Serial.println("start");
 }
 

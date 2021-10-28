@@ -1,4 +1,4 @@
-/* For use with the colorview Arduino example sketch 
+/* For use with the colorview Arduino 
    Update the Serial() new call to match your serial port
    e.g. COM4, /dev/usbserial, etc!
 */
@@ -107,17 +107,30 @@ void keyPressed() {
     printColors();
   }
   else if(key == 'b' || key == 'B'){
-    output.print("Green: ");
+    output.print("Blue: ");
     printColors();
   }
-  else  if (key==CODED) {
-    if (keyCode==ESC) {
-      output.flush();  // Writes the remaining data to the file
-      output.close();  // Finishes the file
-      exit();  // Stops the program
-    } 
+  else if(key == 'w' || key == 'W'){
+    output.print("Wood: ");
+    printColors();
   }
-  else  if (key== 'q') {
+  else if(key == 's' || key == 'S'){
+    output.print("Sand: ");
+    printColors();
+  }
+  else if(key == 'v' || key == 'V'){
+    output.print("Gravel: ");
+    printColors();
+  }
+  else if(key == 'o' || key == 'O'){
+    output.print("Other: ");
+    printColors();
+  }
+  else if(key == 'e' || key == 'E'){
+    output.print("Empty: ");
+    printColors();
+  }
+  else if (key == 'q' || key == 'Q') {
     output.flush();  // Writes the remaining data to the file
     output.close();  // Finishes the file
     exit();  // Stops the program
