@@ -11,8 +11,8 @@ Serial port;
 
 void setup(){
  size(200,200);
- // remember to replace COM20 with the appropriate serial port on your computer ex Serial.list()[1]
- port = new Serial(this, "COM7", 9600); 
+ // Replace COM20 with the appropriate serial port
+ port = new Serial(this, "COM4", 9600); 
  port.clear();
  output = createWriter( "data.txt" );
 }
@@ -130,7 +130,8 @@ void keyPressed() {
     output.print("Empty: ");
     printColors();
   }
-  else if (key == 'q' || key == 'Q') {
+  else if (key == 'q' || key == 'Q' || key == ESC) {
+    key = 0;
     output.flush();  // Writes the remaining data to the file
     output.close();  // Finishes the file
     exit();  // Stops the program
