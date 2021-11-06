@@ -29,10 +29,10 @@ void loop() {
   for (int i = 0; i < numberOfSensors; i++) {
     chooseBus(i);
     float red, green, blue;
-    tcs[i].setInterrupt(false);  // turn on LED
+    //tcs[i].setInterrupt(false);  // turn on LED
     delay(60);  // takes 50ms to read
     tcs[i].getRGB(&red, &green, &blue);
-    tcs[i].setInterrupt(true);  // turn off LED
+    //tcs[i].setInterrupt(true);  // turn off LED
     
     // Comment out this section below if wanting to use with colorviewCollectorPDE!
     Serial.print("Sensor: ");
