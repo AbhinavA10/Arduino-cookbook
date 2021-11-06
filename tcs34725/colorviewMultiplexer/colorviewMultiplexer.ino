@@ -11,6 +11,8 @@ void setup() {
   Serial.begin(9600);
   //Serial.println("Color View Test!");
 
+  Wire.begin();
+
   for (int i = 0; i < numberOfSensors; i++) {
     Serial.println(i);
     chooseBus(i);
