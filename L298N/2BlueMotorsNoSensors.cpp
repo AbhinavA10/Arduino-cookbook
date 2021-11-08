@@ -14,12 +14,13 @@ int enB = D7;
 int in3 = D9;
 int in4 = D8;
 
-void runMotors(int mspeed, float delayAmount ) {
+void runMotors(int mspeed, float delayAmount)
+{
   // Run all the motors for a certain amount of time
-    analogWrite(enA, mspeed);
-    analogWrite(enB, mspeed);
-    delay(delayAmount);
-  
+  analogWrite(enA, mspeed);
+  analogWrite(enB, mspeed);
+  delay(delayAmount);
+
   // Stop when done
   analogWrite(enA, 0);
   analogWrite(enB, 0);
@@ -105,19 +106,18 @@ void setup()
     Therefore speeds that these blue motors can run at: Min = 140, Max = 215, (140-215)
   */
   // Format: MotorDirection(speed of motors (0-255), how ms long that action should last)
-  
-  MoveForward(140, 4000);  // Ex: Forward at 140 speed for 4000 ms
-  delay(1000);                       // Wait one second
+
+  MoveForward(140, 4000); // Ex: Forward at 140 speed for 4000 ms
+  delay(1000);            // Wait one second
   MoveReverse(190, 4000);
-  delay(1000);                       // Wait one second
+  delay(1000); // Wait one second
   SpinRight(140, 4000);
-  delay(1000);                       // Wait one second
+  delay(1000); // Wait one second
   SpinLeft(200, 4000);
-  delay(1000);                       // Wait one second
+  delay(1000); // Wait one second
   MoveForward(190, 2000);
 }
 
 void loop()
 {
-
 }
