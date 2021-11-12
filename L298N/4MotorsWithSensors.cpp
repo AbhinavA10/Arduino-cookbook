@@ -56,15 +56,15 @@ void ISR_countB()
 {
   counter_B++; // increment Motor B counter value
 }
-// Motor B pulse count ISR
+// Motor C pulse count ISR
 void ISR_countC()
 {
-  counter_C++; // increment Motor B counter value
+  counter_C++; // increment Motor C counter value
 }
-// Motor B pulse count ISR
+// Motor D pulse count ISR
 void ISR_countD()
 {
-  counter_D++; // increment Motor B counter value
+  counter_D++; // increment Motor D counter value
 }
 
 // Function to convert from centimeters to steps
