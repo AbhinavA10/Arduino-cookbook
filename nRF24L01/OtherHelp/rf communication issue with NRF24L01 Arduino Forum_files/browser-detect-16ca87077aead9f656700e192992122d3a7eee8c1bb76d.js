@@ -1,0 +1,2 @@
+if(window.WeakMap&&window.Promise&&"undefined"!=typeof globalThis)try{(new WeakMap).has(0)}catch(e){window.unsupportedBrowser=!0}else window.unsupportedBrowser=!0;
+//# sourceMappingURL=https://dub2.discourse-cdn.com/arduino/assets/browser-detect-16ca87077aead9f656700e192992122d3a7eee8c1bb76da992127945464d4777.js.map
