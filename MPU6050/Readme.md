@@ -1,6 +1,6 @@
 LIBRARIES:
 - Under `\i2cdevlib-master_Arduino.zip\i2cdevlib-master\Arduino`, take the `I2Cdev` and `MPU6050` folder and put it in libraries of the Documents\Arduino.
-- Install toxiclib libraries in processing
+- Install toxiclib libraries in processing or take the 2 folders inside `Toxiclib.zip` and put it in `\Documents\Processing\libraries`
     
 NOTE:
 
